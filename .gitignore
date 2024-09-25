@@ -1,5 +1,5 @@
 HELP.md
-.gradle
+.gradle ##인텔리제이에서 자동 생성
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -18,7 +18,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+.idea   ##인텔리제이에서 자동 생성
 *.iws
 *.iml
 *.ipr
