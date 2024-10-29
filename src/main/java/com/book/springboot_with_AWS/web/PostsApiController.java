@@ -7,6 +7,8 @@ import com.book.springboot_with_AWS.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 public class PostsApiController {
@@ -24,6 +26,12 @@ public class PostsApiController {
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
+    }
+
+    //전체 조회
+    @GetMapping("/api/v1/posts")
+    public List<PostsResponseDto> findAllDesc(){
+        return postsService.findAllDesc();
     }
 
     //수정
